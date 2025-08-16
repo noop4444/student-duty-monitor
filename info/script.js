@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     dutyCheckboxes.forEach(dutyCheckbox => {
         const id = dutyCheckbox.dataset.id;
 
-        // Load saved duty state
+        
         const savedDuty = localStorage.getItem("duty_" + id);
         if (savedDuty === "true") {
             dutyCheckbox.checked = true;
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         dutyCheckbox.addEventListener("change", () => {
             if (dutyCheckbox.checked) {
-                // Uncheck absent checkbox
+                
                 const absentCheckbox = document.querySelector('.absent-check[data-id="' + id + '"]');
                 absentCheckbox.checked = false;
                 localStorage.removeItem("absent_" + id);
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     absentCheckboxes.forEach(absentCheckbox => {
         const id = absentCheckbox.dataset.id;
 
-        // Load saved absent state
+        
         const savedAbsent = localStorage.getItem("absent_" + id);
         if (savedAbsent === "true") {
             absentCheckbox.checked = true;
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         absentCheckbox.addEventListener("change", () => {
             if (absentCheckbox.checked) {
-                // Uncheck duty checkbox
+                
                 const dutyCheckbox = document.querySelector('.duty-checkbox[data-id="' + id + '"]');
                 dutyCheckbox.checked = false;
                 localStorage.removeItem("duty_" + id);
@@ -49,7 +49,7 @@ function checkAll() {
         checkbox.checked = true;
         localStorage.setItem("duty_" + checkbox.dataset.id, true);
 
-        // Uncheck corresponding absent checkbox
+        
         const absentCheckbox = document.querySelector('.absent-check[data-id="' + checkbox.dataset.id + '"]');
         if (absentCheckbox) {
             absentCheckbox.checked = false;

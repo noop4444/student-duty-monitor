@@ -1,8 +1,9 @@
 h1{
     color:rgb(0, 0, 0)
+    
 }
 *{
-    background-color:rgb(107, 168, 141)
+    background-color:rgb(129, 212, 175)
 }
 
 
@@ -12,7 +13,7 @@ table {
 }
 
 table img {
-    width: 300px;
+    width: 200px;
     height: auto;
     display: block;
     margin: auto;
@@ -29,7 +30,7 @@ table td, table th {
 .absent-check {
     width: 20px;
     height: 20px;
-    transform: scale(1.5); /* Makes it appear larger */
+    transform: scale(1.5);
     cursor: pointer;
 }
 
@@ -46,7 +47,7 @@ body {
 .top-section a {
     margin-right: 10px;
     text-decoration: none;
-    color: #0077cc;
+    color: #d73ecd;
 }
 
 .bottom-section {
@@ -64,8 +65,8 @@ body {
     flex-shrink: 0;
 }
 a {
-    color: #ff9d00;
-    text-decoration: none; /* removes underline */
+    text-decoration: none;
+    color: #d73ecd;
     font-weight: bold;
     padding: 0px 7px;
     border-radius: 5px;
