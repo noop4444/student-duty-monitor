@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Summary</h1>
+  <a href="../index.html">Home</a>
+
+  <a href="monday.html">Monday</a>
+  <a href="tuseday.html">Tuesday</a>
+  <a href="wednesday.html">Wednesday</a>
+  <a href="thursday.html">Thursday</a>
+  <a href="friday.html">Friday</a>
+  <a href="submary.html">Submary</a>
+
+  <table border="4">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Duty Done</th>
+        <th>Absent</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td id="monday-duty">0</td>
+        <td id="monday-absent">0</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td id="tuesday-duty">0</td>
+        <td id="tuesday-absent">0</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td id="wednesday-duty">0</td>
+        <td id="wednesday-absent">0</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td id="thursday-duty">0</td>
+        <td id="thursday-absent">0</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td id="friday-duty">0</td>
+        <td id="friday-absent">0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    // number of students per day (adjust if different)
+    const studentsPerDay = {
+      monday: 8,
+      tuesday: 8,
+      wednesday: 8,
+      thursday: 8,
+      friday: 7 // example, change to actual student count
+    };
+
+    function updateSummary() {
+      for (let day in studentsPerDay) {
+        let dutyCount = 0;
+        let absentCount = 0;
+        const total = studentsPerDay[day];
+
+        for (let i = 1; i <= total; i++) {
+          if (localStorage.getItem("duty_" + i) === "true") {
+            dutyCount++;
+          }
+          if (localStorage.getItem("absent_" + i) === "true") {
+            absentCount++;
+          }
+        }
+
+        document.getElementById(day + "-duty").textContent = dutyCount;
+        document.getElementById(day + "-absent").textContent = absentCount;
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", updateSummary);
+  </script>
+</body>
+</html>

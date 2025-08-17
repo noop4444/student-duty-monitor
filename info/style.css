@@ -72,3 +72,24 @@ a {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
+.top-section {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* space between groups */
+}
+
+.title-with-img {
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* space between "Home" and logo */
+}
+
+.title-with-img h1 {
+    margin: 0;
+}
+
+.top-image {
+    width: 90px;   /* make it icon size */
+    height: 90px;
+    object-fit: contain;
+}
