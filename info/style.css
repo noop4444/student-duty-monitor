@@ -87,7 +87,12 @@ a {
 .title-with-img h1 {
     margin: 0;
 }
-
+.bottom-section {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 20px;
+}
 .top-image {
     width: 90px;   /* make it icon size */
     height: 90px;
