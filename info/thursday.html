@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thursday</title>
+    <title>วันพฤหัสบดี</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Thursday </h1>
-    <h3>( 8 student )( student number 25 to 32 )</h3>
-    <button onclick="checkAll()">Check All</button>
-    <button onclick="resetDuties()">Reset All</button>
-    <a href="../index.html">Home</a>
-
-    <a href="monday.html">Monday</a>
-    <a href="tuesday.html">Tuesday</a> 
-    <a href="wednesday.html">Wednesday</a>
-    <a href="thursday.html">Thursday</a>
-    <a href="friday.html">Friday</a>
-    <a href="submary.html">Submary</a>
+    <h1>วันพฤหัสบดี </h1>
+    <h3>(  จำนวนนักเรียน 8 คน)( นักเรียนเลขที่ 25 ถึง 32 )</h3>
+    <div class="navbar">
+        <button class="call" onclick="checkAll()" >เช็คทั้งหมด</button>
+        <button class="rall" onclick="resetDuties()">รีเซ็ตทั้งหมด</button>
+        <a href="../index.html">หน้าหลัก</a>
+    
+        <a href="monday.html">วันจันทร์</a>
+        <a href="tuesday.html">วันอังคาร</a> 
+        <a href="wednesday.html">วันพุธ</a>
+        <a href="thursday.html">วันพฤหัสบดี</a>
+        <a href="friday.html">วันศุกร์</a>
+        <a href="submary.html">ผลสรุป</a>
+    </div>
     <script src="script.js"></script>
 <table border="4">
         <thead>
-            <th><h3>Number of people</h3></th>
-            <th><h3>Student image</h3></th>
-            <th><h3>Student name</h3></th>
-            <th><h3>Student number</h3></th>
-            <th><h3>Done their duty?</h3></th>
-            <th><h3>Absent?</h3></th>
+            <th><h3>ลำดับ</h3></th>
+            <th><h3>รูปภาพนักเรียน</h3></th>
+            <th><h3>ชื่อนักเรียน</h3></th>
+            <th><h3>เลขที่นักเรียน</h3></th>
+            <th><h3>ได้ทำความสะอาดห้อง</h3></th>
+            <th><h3>ไม่ได้มาโรงเรียน</h3></th>
         </thead>
         <tbody>
             <tr>
