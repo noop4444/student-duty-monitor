@@ -75,13 +75,13 @@ a {
 .top-section {
     display: flex;
     align-items: center;
-    gap: 20px; /* space between groups */
+    gap: 20px; 
 }
 
 .title-with-img {
     display: flex;
     align-items: center;
-    gap: 10px;  /* space between "Home" and logo */
+    gap: 10px; 
 }
 
 .title-with-img h1 {
@@ -94,18 +94,18 @@ a {
     margin-top: 20px;
 }
 .top-image {
-    width: 90px;   /* make it icon size */
+    width: 90px;   
     height: 90px;
     object-fit: contain;
 }
-/* Container for nav links/buttons *//* Container for nav links/buttons */
+
 .navbar {
     display: flex;
     gap: 10px;
     margin: 15px 0;
 }
 
-/* Shared style for nav links */
+
 .navbar a {
     display: inline-block;
     padding: 10px 15px;
@@ -119,7 +119,7 @@ a {
     cursor: pointer;
 }
 
-/* Hover effect for links */
+
 .navbar a:hover {
     background-color: #d73ecd;
     color: white;
@@ -127,7 +127,7 @@ a {
     box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
-/* ✅ Style for checkAll button */
+
 .navbar .call {
     display: inline-block;
     padding: 10px 15px;
@@ -141,7 +141,7 @@ a {
     cursor: pointer;
 }
 
-/* Hover effect for checkAll */
+
 .navbar .call:hover {
     background-color: #000000;
     color: rgb(0, 255, 217);
@@ -149,7 +149,7 @@ a {
     box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
-/* ✅ Style for resetAll button */
+
 .navbar .rall {
     display: inline-block;
     padding: 10px 15px;
@@ -163,7 +163,7 @@ a {
     cursor: pointer;
 }
 
-/* Hover effect for resetAll */
+
 .navbar .rall:hover {
     background-color: #000000;
     color: rgb(255, 4, 4);
